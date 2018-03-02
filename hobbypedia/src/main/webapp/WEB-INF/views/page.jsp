@@ -4,12 +4,14 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <c:set var="contextRoot" value="${pageContext.request.contextPath}" />
+<c:set var="baseUrl" value="http://localhost:8080/hobbypedia" />
+
 
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
-<spring:url var="css" value="resources/css" />
-<spring:url var="js" value="resources/js" />
-<spring:url var="images" value="resources/images" />
+<spring:url var="css" value="${baseUrl}/resources/css" />
+<spring:url var="js" value="${baseUrl}/resources/js" />
+<spring:url var="images" value="${baseUrl}/resources/images" />
 
 <!DOCTYPE html>
 <html lang="en">
@@ -59,6 +61,12 @@
 			<c:if test="${userClickContact == true}">
 				<%@include file="contact.jsp"%>
 			</c:if>
+
+			<!-- loading only when user clicks events -->
+			<c:if test="${userClickAllEvents == true or userClickCategryEvents == true}">
+				<%@include file="listEvents.jsp"%>
+			</c:if>
+
 		</div>
 
 

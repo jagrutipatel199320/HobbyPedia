@@ -1,23 +1,25 @@
-$(function(){
-	
+$(function() {
+
 	// solving active menu problem
-	switch(menu){
+	switch (menu) {
 	case 'Home':
 		$("#home").addClass('active');
 		break;
-		
+	case 'All Events':
+		$("#events").addClass('active');
+		break;
+
 	case 'About Us':
 		$("#about").addClass('active');
-		break;		
-		
+		break;
+
 	case 'Contact Us':
 		$("#contact").addClass('active');
 		break;
-		
+
 	default:
 		$("#home").addClass('active');
 
-		
 	}
-	
+
 });

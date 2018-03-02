@@ -8,19 +8,18 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item" id="home">
-              <a class="nav-link" href="${contextRoot}/home">Home
-                <span class="sr-only">(current)</span>
-              </a>
+              <a class="nav-link" href="${contextRoot}/home">Home</a>
+            </li>            
+            <li class="nav-item" id="events">
+              <a class="nav-link" href="${contextRoot}/show/all/events">View Events</a>
             </li>
             <li class="nav-item" id="about">
-              <a class="nav-link" href="${contextRoot}/about">About</a>
-            </li>
-            <li class="nav-item" id="hobbies">
-              <a class="nav-link" href="${contextRoot}/listHobbies">View Hobbies</a>
+              <a class="nav-link" href="${contextRoot}/about">About Us</a>
             </li>
             <li class="nav-item" id="contact">
-              <a class="nav-link" href="${contextRoot}/contact">Contact</a>
+              <a class="nav-link" href="${contextRoot}/contact">Contact Us</a>
             </li>
+            
           </ul>
         </div>
       </div>

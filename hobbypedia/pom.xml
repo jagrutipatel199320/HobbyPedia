@@ -12,6 +12,14 @@
 		<spring.version>4.3.6.RELEASE</spring.version>
 	</properties>
 	<dependencies>
+
+		<!-- Link backend project -->
+		<dependency>
+			<groupId>net.hobbypedia</groupId>
+			<artifactId>HobbyPediaBackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
 		<!-- JAVA EE API -->
 		<dependency>
 			<groupId>javax</groupId>
@@ -34,8 +42,8 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		
-		
+
+
 		<!-- JSTL -->
 		<dependency>
 			<groupId>jstl</groupId>
